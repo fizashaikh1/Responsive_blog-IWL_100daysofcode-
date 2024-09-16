@@ -1,0 +1,170 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    padding: 1em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.post-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 2em;
+}
+
+article {
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 15px;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .post-grid {
+        flex-direction: column;
+    }
+
+    article {
+        width: 100%;
+    }
+}
+/* About Me Section */
+.about-me {
+    text-align: center;
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-photo {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    max-width: 600px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Contact Form Section */
+.contact-form {
+    background-color: #fff;
+    padding: 40px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .about-photo {
+        margin-right: 40px;
+    }
+}
